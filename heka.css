@@ -40,6 +40,16 @@ body {
     color: white;
 }
 
+.mobile {
+    display: none;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     display: grid;
     grid-template-columns: auto;
@@ -177,4 +187,24 @@ section {
 }
 .footer-link:hover {
     color:#f1e51c;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+    main {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        padding: 50px;
+        text-align: center;
+    }
+    .mobile > img {
+        margin-top: 50px;
+    }
 }
